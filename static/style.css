@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia;
+
+}
+
+.newword{
+    background-color:black;
+    color:white;
+    width: 50vw;
+}
+
+.gif{
+    margin: 0 auto;
+    position:relative;
+    left: 35vw;
+    width: 30vw;
+}
+
+.canvas{
+    margin: 0 auto;
+    position:absolute;
+    top: 12.5vh;
+    left: 30vw;
+    /* width: 40vw;
+    height: 45vh; */
+}
+
+.mes, .message{
+    text-align:center;
+    font-size: min(10vh, 6.2vw);
+    background-color: white;
+    border: 0;
+    transition: all 3s;
+}
+
+.newword{
+    height: 4vh;
+    position:absolute;
+    width: 40vw;
+    left: 30vw;
+}
+
+.message:hover{
+    cursor: pointer;
+    transition: all 1s;
+    color: goldenrod;
+}
+
+
+
+.inputs{
+    height: 10vh;
+    margin: 4vh 0;
+    font-size: 10vh;
+    width: 12.5vw;
+    text-align: center;
+    line-height: 10vh;
+    padding-bottom: 2vh
+}
+
+.tries{
+    font-size: 5vw;
+    /* font-weight: bold; */
+    position: absolute;
+    top: 20vh;
+    left: 7vw;
+    text-align: center
+}
+
+.left, .right{
+    position: absolute;
+    top: 30vh;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+.new{
+    position: absolute;
+    top: 50vh;
+    text-align: center;
+    left: 2vw;
+    font-size: min(5vw);
+    padding: 1vh;
+    width: 30vw;
+}
+
+.new button{
+    border: 5px solid goldenrod;
+}
+
+
+.left{
+    left: 17.5vw;
+}
+
+.right{
+    right: 17.5vw;
+}
+
+.submit, #ans{
+    position: absolute;
+    top: -100vh;
+    background-color:white;
+    border:0;
+    color: white;
+}
+
+.word{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.bottom-bit{
+    position: absolute;
+    top: 60vh;
+    left: 5vw;
+    width: 90vw;
+    height: 35vh;
+}
+
+#used{
+    font-size: 4.5vh;
+    font-family: garamond;
+    border: 2px solid black;
+    border-radius: 5%;
+    color: rgba(0, 0, 0, 0.5);
+    height: 25vh;
+    width: 30vw;
+    padding: 2.5vh;
+    left: 55vw;
+    bottom: 30vh;
+    position:relative;
+}
+
+.letter{
+    overflow: hidden;
+    font-size: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    border-radius: 5%;
+    width: auto;
+    padding: 0 .5vw;
+    height: 8vh;
+    animation: color-change infinite 3s;
+}
+
+@keyframes color-change{
+    100%{
+        border-color:rgb(0, 0, 225);
+    }
+}
+
+.letterinput{
+    overflow: hidden;
+    font-size: 15vh;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 118);
+    height: 20vh;
+    width: 15vw;
+    margin: 2vh 15vw;
+}
+
+.special {
+    position:absolute;
+    top: -10vh;
+    background-color: white
+}
+
+
+

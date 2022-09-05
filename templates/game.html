@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <script src="{{url_for('static', filename = 'hang.js')}}" defer></script>
+{% endblock %}
+
+{% block content %}
+<form action="/" method="POST" class = "mes newword">
+    <button type="submit" title = "newword" class = "mes message">New Word</button>
+</form>
+
+<div class="tries">
+    <div>Tries:</div>
+    <div id="tries"></div>
+</div>
+
+<div id = "ans">{{word}}</div>
+
+<div class="bottom-bit">
+    <div class="bottom-left">
+        <div class="word">
+            {% for letter in word %}
+                               
+                <div class="letter"></div>
+                
+            {% endfor %}
+        </div>
+        <form action="/result" method = "POST" id = "lettersubmit">
+            <input type="text" title = "letter" for = "letter" maxlength="1" pattern="[a-zA-Z]" class="letterinput">
+            <input type="submit" value="sub" class = "submit" id = "lettersub">
+        </form>
+    </div>
+
+    <form action="/result" method="GET" id = "failedsubmit" class = "submit">
+        <input type="text" for = "failed" title = "failed" value = "10" class = "submit" id = "ubad">
+        <input type="submit" class = "submit">
+        
+    </form>
+
+    <div id="used"></div>
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <form action="/game" method="POST">
+        <div class="left">
+            <label class="label">Min Length:</label>
+            <br>
+            <input title="minimum length" type="text" pattern="\d+" name="min" for="min" class="lengthmin inputs" maxlength="2">
+        </div>
+        <div class="right">
+            <label class = "label">Max Length</label>
+            <br>
+            <input title="maximum length" type="text" pattern= "\d+" name="max" for="max" class="lengthmax inputs" maxlength="2">
+        </div>
+
+        <input class = "submit" type="submit" value = "submit">
+    </form>
+
+{% endblock %}
